@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SadakaMatik - Hesap ve Veri Silme (Account & Data Deletion)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+        .section-tr, .section-en {
+            margin-bottom: 40px;
+        }
+        .alert {
+            background-color: #e8f4fd;
+            border-left: 4px solid #2980b9;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .method-box {
+            background-color: #fdfdfd;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #c0392b;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>SadakaMatik</h1>
+
+    <div class="section-tr">
+        <h2>🇹🇷 Hesap ve Veri Silme Talebi</h2>
+        <p>SadakaMatik uygulamasını kullandığınız için teşekkür ederiz. Gizliliğinize önem veriyoruz. Hesabınızı ve ilişkili tüm verilerinizi (Firebase bulut verileri) silmek isterseniz, aşağıdaki iki yöntemden birini kullanabilirsiniz:</p>
+
+        <h3>Hesabımı Tamamen Nasıl Silerim?</h3>
+        
+        <div class="method-box">
+            <h4>Yöntem 1: Uygulama İçinden (Önerilen ve En Hızlı Yol)</h4>
+            <p>Eğer uygulama telefonunuzda yüklüyse, işleminizi otomatik ve güvenli bir şekilde yapabilirsiniz:</p>
+            <ol>
+                <li>Uygulamayı açın ve <strong>İletişim</strong> bölümüne gidin.</li>
+                <li>Konu başlığı olarak <strong>"Diğer"</strong> seçeneğini seçin.</li>
+                <li>Açıklama kısmına <strong>"Hesabımın silinmesini talep ediyorum"</strong> yazın ve gönderin.</li>
+            </ol>
+            <p><em>Not: Bu yöntemi kullandığınızda, sistem Kullanıcı Kimliğinizi (UID) e-postaya otomatik olarak ekler, böylece talebiniz anında doğrulanır ve işleme alınır.</em></p>
+        </div>
+
+        <div class="method-box">
+            <h4>Yöntem 2: Web Üzerinden (Uygulama Yüklü Değilse)</h4>
+            <p>Eğer uygulamayı cihazınızdan kaldırdıysanız, hesap silme işlemini e-posta yoluyla da talep edebilirsiniz:</p>
+            <ul>
+                <li>Bize <strong>techturak@gmail.com</strong> adresinden, uygulamaya kayıt olurken kullandığınız Google e-posta adresiyle bir mesaj gönderin.</li>
+                <li>Lütfen e-postanın konu kısmına <code>SadakaMatik Hesap Silme Talebi</code> yazın.</li>
+            </ul>
+            <a href="mailto:techturak@gmail.com?subject=SadakaMatik%20Hesap%20Silme%20Talebi" class="btn">Silme Talebi Gönder</a>
+        </div>
+        
+        <div class="alert">
+            <strong>Silinecek Veriler:</strong> Talebiniz bize ulaştıktan sonra 7 gün içerisinde; e-posta adresiniz, UID numaranız, "Hayır Yarışı" puanlarınız ve bulut sunucularımızda (Firebase) yedeklenen tüm istatistikleriniz <strong>kalıcı olarak</strong> silinecektir.
+        </div>
+
+        <h3>Sadece Cihazımdaki Verileri Nasıl Silerim?</h3>
+        <p>Eğer ana hesabınızı silmeden sadece telefonunuzda kayıtlı olan yerel bağış geçmişinizi temizlemek isterseniz, uygulamanın içindeki <strong>Ayarlar > Uygulama İçi Verileri Sil</strong> butonunu kullanabilirsiniz. Bu işlem buluttaki hesabınıza dokunmaz.</p>
+    </div>
+
+    <hr>
+
+    <div class="section-en">
+        <h2>🇬🇧 Account and Data Deletion Request</h2>
+        <p>Thank you for using SadakaMatik. We respect your privacy. If you wish to permanently delete your account and all associated cloud data, you can use one of the two methods below:</p>
+
+        <h3>How Do I Completely Delete My Account?</h3>
+        
+        <div class="method-box">
+            <h4>Method 1: From Inside the App (Recommended & Fastest)</h4>
+            <p>If the app is still installed on your device, you can securely request deletion:</p>
+            <ol>
+                <li>Open the app and go to the <strong>Contact (İletişim)</strong> section.</li>
+                <li>Select <strong>"Other" (Diğer)</strong> as the subject.</li>
+                <li>Write <strong>"I request account deletion"</strong> in the description box and send the email.</li>
+            </ol>
+            <p><em>Note: Using this method automatically attaches your User ID (UID) to the email, allowing us to instantly verify and process your request.</em></p>
+        </div>
+
+        <div class="method-box">
+            <h4>Method 2: Via Web (If the App is Uninstalled)</h4>
+            <p>If you have already removed the app from your device, you can request account deletion via email:</p>
+            <ul>
+                <li>Send an email to <strong>techturak@gmail.com</strong> using the Google email address you used to sign in to the app.</li>
+                <li>Please write <code>SadakaMatik Account Deletion Request</code> in the subject line.</li>
+            </ul>
+            <a href="mailto:techturak@gmail.com?subject=SadakaMatik%20Account%20Deletion%20Request" class="btn">Send Deletion Request</a>
+        </div>
+        
+        <div class="alert">
+            <strong>Data to be Deleted:</strong> Upon receiving your request, your email address, UID, "Hayır Yarışı" points, and all donation statistics backed up on our cloud servers (Firebase) will be <strong>permanently deleted</strong> within 7 days.
+        </div>
+
+        <h3>How Do I Delete Only My Local Data?</h3>
+        <p>If you want to clear your local device donation history without deleting your main account, simply use the <strong>Settings > Delete In-App Data</strong> button inside the app. This action does not affect your cloud account.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
